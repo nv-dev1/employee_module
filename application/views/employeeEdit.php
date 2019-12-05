@@ -17,12 +17,13 @@
         <title>Nveloop | Update Emlpoyee Information</title>
     </head>
     <body>
+        <?php $this->load->view('includes/header');?>
         <div class="container">
         <h2> Hi! </h2>
         <h2> Update Your Details</h2></br>
-        <form method="post" action="<?php echo site_url('employeeController/update()')?>/<?php echo $row->emp_id">
+        <form method="post" action="<?php echo site_url('CrudController/update')?>/<?php echo $row->emp_id; ?>">
             <div class="form-group">
-                <label for="formGroupExampleInput">Employee ID</label>
+                <label for="formGroupExampleInput">emp_id</label>
                 <input type="text" class="form-control" name="emp_id" value="<?php echo $row->emp_id; ?>" id="formGroupExampleInput" placeholder="Your Employee ID">
             </div>
 

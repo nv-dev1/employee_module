@@ -32,10 +32,14 @@
         
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-        <a class="nav-link" href="#">LOGIN <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">LOGIN <span class="sr-only"></span></a>
         </li>
-
+        <li class="nav-item active">
+        <a class="nav-link" href="<?php echo site_url('c_report')?>"> Employee Report <span class="sr-only"></span></a>
+        </li>
         </ul>
+
+
         <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Employee ID / Name" aria-label="Search">
         <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
@@ -125,7 +129,7 @@
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                    <th scope="col">Employee ID</th>
+                    <th scope="col">emp_id</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Role</th>
@@ -148,7 +152,7 @@
                     <td><?php echo $row->address; ?></td>
                     <td><?php echo $row->date_of_birth; ?></td>
                     <td><?php echo $row->emergency_contact; ?></td>
-                    <td> <a href="<?php echo site_url('employeeController/edit')?>/<?php echo $row->emp_id; ?>">Edit</a> |
+                    <td> <a href="<?php echo site_url('employeeController/edit');?>/<?php echo $row->emp_id;?>">Edit</a> |
                         <a href="<?php echo site_url('employeeController/delete')?>/<?php echo $row->emp_id; ?>" class="text-danger">Delete</a></td>
                     </tr>
                     <?php } ?>
@@ -157,4 +161,4 @@
         </div>
         
     </body>
-</html>
+</html> 
