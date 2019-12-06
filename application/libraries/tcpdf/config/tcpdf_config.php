@@ -45,19 +45,19 @@
  * Installation path (/var/www/tcpdf/).
  * By default it is automatically calculated but you can also set it as a fixed string to improve performances.
  */
-//define ('K_PATH_MAIN', '');
+define ('K_PATH_MAIN', '/var/www/tcpdf/');
 
 /**
  * URL path to tcpdf installation folder (http://localhost/tcpdf/).
  * By default it is automatically set but you can also set it as a fixed string to improve performances.
  */
-//define ('K_PATH_URL', '');
+define ('K_PATH_URL', 'http://localhost/tcpdf/');
 
 /**
  * Path for PDF fonts.
  * By default it is automatically set but you can also set it as a fixed string to improve performances.
  */
-//define ('K_PATH_FONTS', K_PATH_MAIN.'fonts/');
+define ('K_PATH_FONTS', K_PATH_MAIN.'fonts/');
 
 /**
  * Default images directory.
@@ -114,7 +114,7 @@ define ('PDF_HEADER_TITLE', 'TCPDF Example');
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "by Nicola Asuni - Tecnick.com\nwww.tcpdf.org");
+define ('PDF_HEADER_STRING', "by Fathima Faseeha - Nveloop.com");
 
 /**
  * Document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch].
